@@ -1,38 +1,39 @@
-# Phase 2 Project
+# Capstone Project
 
 **Author**: [Nat Berryman](https://github.com/natberr)
 
 ## Project Overview
 
-The purpose of this regression model is to predict the house prices in King County by analysing the King County House Sales dataset.
+The purpose of this regression model is to predict the global sales of Video Games by analysing the Video Game Sales
+dataset from Kaggle https://www.kaggle.com/datasets/xtyscut/video-games-sales-as-at-22-dec-2016csv.
 
 ### Business Problem
 
-How can we predict the house price sales in King County?
+VG Corp. have moved into the Video Game industry and want a predictive model to understand what video games to produce.
 
-In order to solve this problem, I intended to answer the below questions:
-1. Does location impact sale price?
-2. Does the size of the house impact sale price?
-3. Does quality of the house impact sale price?
+To assist VG Corp. in making the right decisions I intended to determine what certain varibales have on sale prices:
+1. Platform
+2. Genre
+3. Publisher
+4. Critic/User Score
 
 ### The Data
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder.
+This project uses the Video Game Sales dataset, which can be found in  `Video_Games_Sales_as_at_22_Dec_2016.csv` in the data folder in this repo.
 
 **Data Cleaning**
 - Dropped unnecessary data
 - Replaced or removed null values
-- Narrowed data to only included houses with <6 bedrooms
-- Using the empirical formula I removed outliers
-- Addressed multicollinearity
+- Put Publisher data into Small, Medium and Large buckets
+- Ensured Critic Score and User Score used consistent metrics by mulitplying User Score by 10
 - Split data set between continuous and categorical data
-- Binned Grade into Low, Average and High
+- As model matures, I added platform into developer buckets E.G. SNES and Gameboy into Nintendo bucket
 
 
 ### Exploratory Data Analysis
 
 **Key Features include:**
-- Bathrooms
+- D
 - Square Foot living space
 - Grade
 - Latitude
@@ -47,10 +48,7 @@ I then created price vs zip code graph to explore price distribution across zip 
 Using these visualization I created  a new variable – **km_from_cbd**
 
 Used mean normalization to standardise the data
-Sqft living, sqft lot, sqft above, sqft living 15, sqft lot 15 appear good
-Km from CBD is negatively skewed
-
-Used KDE plot and joint plot to explore data
+Used Histogram, KDE plot and joint plot to explore data
 
 ### Models
 
