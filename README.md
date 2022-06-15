@@ -5,7 +5,7 @@
 ## Project Overview
 
 The purpose of this regression model is to predict the global sales of Video Games by analysing the Video Game Sales
-dataset from Kaggle https://www.kaggle.com/datasets/xtyscut/video-games-sales-as-at-22-dec-2016csv.
+dataset from [Kaggle](https://www.kaggle.com/datasets/xtyscut/video-games-sales-as-at-22-dec-2016csv).
 
 ### Business Problem
 
