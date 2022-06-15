@@ -53,6 +53,7 @@ Model 1 proved the highest R^2 value however not all P values were significant. 
 ![](./images/modeltable.png)
 
 **Model 1**
+
 ![](./images/model1OLS.png)
 ![](./images/model1resid.png)
 ![](./images/trainvtest1.png)
