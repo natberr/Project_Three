@@ -24,74 +24,40 @@ This project uses the Video Game Sales dataset, which can be found in  `Video_Ga
 **Data Cleaning**
 - Dropped unnecessary data
 - Replaced or removed null values
-- Put Publisher data into Small, Medium and Large buckets
-- Ensured Critic Score and User Score used consistent metrics by mulitplying User Score by 10
+- Narrowed data to only include sales between 2010-2016
+- Using the empirical formula I removed outliers
+- Addressed multicollinearity
 - Split data set between continuous and categorical data
-- As model matures, I added platform into developer buckets E.G. SNES and Gameboy into Nintendo bucket
-
+- Grouped Publisher data into Small, Medium and Large
+- Created additional variables including total engagement and average score
 
 ### Exploratory Data Analysis
 
-**Key Features include:**
-- D
-- Square Foot living space
-- Grade
-- Latitude
-- Square Foot Above
-- Square Foot Living 15 (neighbors)
+No key features stood out that showed positive correlation with Global Sales.
+Further analysis required to identify any positive correlation with Global Sales.
 
-**Notes:** 
-- Zip code excluded as data-type is a string
-- Latitude correlates with price more than Longitude
-
-I then created price vs zip code graph to explore price distribution across zip codes and then plotted to a heatmap.
-Using these visualization I created  a new variable – **km_from_cbd**
+Global Sales for Video Games are highest on the PS2 console while Action games are the highest selling following by Sports and Shooter
+Using the platform visualization I modelled two sets of data, individual platforms and then grouping platform together by maker e.g. PS, PS2 and PS3 under Sony and XOne, X360 under Microsoft
+Number of games peaked in 2008 and 2009 but had declined since
 
 Used mean normalization to standardise the data
-Used Histogram, KDE plot and joint plot to explore data
+All features appear good however  the critic and user variables are somewhat negatively skewed
 
 ### Models
 
-**Model 1**
-- Used selected features identified in repo.
-- R^ 0.527, however multiple variables had negative R^
-- Residual graph was good
+Unfortunately no models could provide concrete recommendations
 
-![](./images/Model1_OLS.png)
-![](./images/model1_resid.png)
-
-**Model 2**
-- Used fewer variable in features (kept bathrooms, sqft living, sqft living15 and high grade)
-- R^ 0.413
-- Residual graph was good
-
-![](./images/Model2_OLS.png)
-![](./images/model2_resid.png)
-
-**Model 3**
-- Selected features included all variables with positive R^
-- R^ 0.524
-- Residual graph was good
-
-![](./images/Model3_OLS.png)
-![](./images/model3_resid.png)
+![](./images/modeltable.png)
 
 ### Conclusions
 
-- I determined Model 3 was the must accurate model by using all features with postive R^ and removing variables with negative R^.
-- Selected features all statistically significant with p-value <0.05
-- sqft living15 coef – 0.2791
-- sqft living coef – 0.3956
-- distance from CBD coef - 0.3434
-- bathrooms coef – 0.0645
-- high grade rating coef– 0.4590
-- These Coef figures mean for unit increase in any one of these variables there was in increase in price by ~0.3 units.
-
-![](./images/price_predict2.png)
+While there is highly performing genres, platforms and publishers the Global Sales can’t be accurately predicted using OLS and Polynomial Regression modelling
+It is suggested that advanced regression models are used to drive decisions
+It is however recommended that insights are used for focus areas such has highly performing genres, engagement and consoles
 
 ### For More Information
 
-Please review the full analysis in [my Jupyter Notebook](http://localhost:8888/notebooks/Desktop/AcademyXI/ProjectTwo/dsc-phase-2-project/Project_Two/kc_house_price_regression_modelling.ipynb) or my [presentation pack](http://localhost:8888/files/Desktop/AcademyXI/ProjectTwo/dsc-phase-2-project/Project_Two/Regression%20Modelling%20Presentation.pdf).
+Please review the full analysis in [my Jupyter Notebook] http://localhost:8888/notebooks/Desktop/AcademyXI/ProjectThree/Video%20Game%20Analysis-Copy1.ipynb or my [presentation pack]
 
 For any additional questions, please contact **Nat Berryman** - nathaniel.berryman@gmail.com
 
@@ -100,7 +66,7 @@ For any additional questions, please contact **Nat Berryman** - nathaniel.berrym
 ```
 ├── data
 ├── images
-├── kc_house_price_regression_modelling.ipynb
+├── Video Game Analysis-Copy1.ipynb
 ├── README.md
-└── regression modelling presentation.pdf
+└── video game presentation.pdf
 ```
