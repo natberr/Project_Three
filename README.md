@@ -57,7 +57,7 @@ It is however recommended that insights are used for focus areas such has highly
 
 ### For More Information
 
-Please review the full analysis in [my Jupyter Notebook] http://localhost:8888/notebooks/Desktop/AcademyXI/ProjectThree/Video%20Game%20Analysis-Copy1.ipynb or my [presentation pack]
+Please review the full analysis in [my Jupyter Notebook](http://localhost:8888/notebooks/Desktop/AcademyXI/ProjectThree/Video%20Game%20Analysis-Copy1.ipynb) or my [presentation pack]
 
 For any additional questions, please contact **Nat Berryman** - nathaniel.berryman@gmail.com
 
