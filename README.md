@@ -11,11 +11,10 @@ dataset from [Kaggle](https://www.kaggle.com/datasets/xtyscut/video-games-sales-
 
 VG Corp. have moved into the Video Game industry and want a predictive model to understand what video games to produce.
 
-To assist VG Corp. in making the right decisions I intended to determine what certain varibales have on sale prices:
+To assist VG Corp. in making the right decisions I intended to determine what certain varibales have on Global Sales:
 1. Platform
 2. Genre
 3. Publisher
-4. Critic/User Score
 
 ### The Data
 
@@ -39,6 +38,11 @@ Further analysis required to identify any positive correlation with Global Sales
 Global Sales for Video Games are highest on the PS2 console while Action games are the highest selling following by Sports and Shooter
 Using the platform visualization I modelled two sets of data, individual platforms and then grouping platform together by maker e.g. PS, PS2 and PS3 under Sony and XOne, X360 under Microsoft
 Number of games peaked in 2008 and 2009 but had declined since
+
+![](./images/Genre.png)
+![](./images/Console.png)
+![](./images/years_sales.png)
+
 
 Used mean normalization to standardise the data
 All features appear good however  the critic and user variables are somewhat negatively skewed
