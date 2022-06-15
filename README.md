@@ -43,9 +43,8 @@ Number of games peaked in 2008 and 2009 but had declined since
 ![](./images/Console.png)
 ![](./images/years_sales.png)
 
-
-Used mean normalization to standardise the data
-All features appear good however  the critic and user variables are somewhat negatively skewed
+- Used mean normalization to standardise the data
+- All features appear good however  the critic and user variables are somewhat negatively skewed
 
 ### Models
 
@@ -56,8 +55,10 @@ Unfortunately no models could provide concrete recommendations
 ### Conclusions
 
 While there is highly performing genres, platforms and publishers the Global Sales can’t be accurately predicted using OLS and Polynomial Regression modelling
-It is suggested that advanced regression models are used to drive decisions
-It is however recommended that insights are used for focus areas such has highly performing genres, engagement and consoles
+
+**Recommendations**
+- Use more advanced regression models to assist in driving decisions
+- Use insights to focus on metrics such has highly performing genres, engagement and consoles
 
 ### For More Information
 
