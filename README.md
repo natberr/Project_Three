@@ -32,12 +32,10 @@ This project uses the Video Game Sales dataset, which can be found in  `Video_Ga
 
 ### Exploratory Data Analysis
 
-No key features stood out that showed positive correlation with Global Sales.
-Further analysis required to identify any positive correlation with Global Sales.
+No key features stood out that showed positive correlation with Global Sales. Further is analysis required to identify any positive correlation with Global Sales.
 
 Global Sales for Video Games are highest on the PS2 console while Action games are the highest selling following by Sports and Shooter
-Using the platform visualization I modelled two sets of data, individual platforms and then grouping platform together by maker e.g. PS, PS2 and PS3 under Sony and XOne, X360 under Microsoft
-Number of games peaked in 2008 and 2009 but had declined since
+Using the platform visualization. I modelled two sets of data, individual platforms and then grouping platform together by maker e.g. PS, PS2 and PS3 under Sony and XOne, X360 under Microsoft. Number of games peaked in 2008 and 2009 but had declined since
 
 ![](./images/Genre.png)
 ![](./images/Console.png)
@@ -48,9 +46,16 @@ Number of games peaked in 2008 and 2009 but had declined since
 
 ### Models
 
-Unfortunately no models could provide concrete recommendations
+Unfortunately no models could provide concrete recommendations.
+
+Model 1 proved the highest R^2 value however not all P values were significant. As the features were modified in each addtional model, the R^2 value dropped significantly along with the P values, however the Train MSE and Test MSE variance decreased.
 
 ![](./images/modeltable.png)
+
+**Model 1**
+![](./images/model1OLS.png)
+![](./images/model1resid.png)
+![](./images/trainvtest1.png)
 
 ### Conclusions
 
