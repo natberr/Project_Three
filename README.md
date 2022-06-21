@@ -68,7 +68,7 @@ While there is highly performing genres, platforms and publishers the Global Sal
 
 ### For More Information
 
-Please review the full analysis in [my Jupyter Notebook](http://localhost:8888/notebooks/Desktop/AcademyXI/ProjectThree/Video%20Game%20Analysis-Copy1.ipynb) or my [presentation pack]
+Please review the full analysis in [my Jupyter Notebook](http://localhost:8888/notebooks/Desktop/AcademyXI/ProjectThree/Video%20Game%20Analysis-Copy1.ipynb) or my [presentation pack](https://github.com/natberr/Project_Three/blob/main/VG%20Regression%20Modelling%20Presentation.pdf)
 
 For any additional questions, please contact **Nat Berryman** - nathaniel.berryman@gmail.com
 
