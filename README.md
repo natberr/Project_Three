@@ -23,7 +23,7 @@ This project uses the Video Game Sales dataset, which can be found in  `Video_Ga
 **Data Cleaning**
 - Dropped unnecessary data
 - Replaced or removed null values
-- Narrowed data to only include sales between 2010-2016
+- Narrowed data to only include sales between 2000-2016
 - Using the empirical formula I removed outliers
 - Addressed multicollinearity
 - Split data set between continuous and categorical data
